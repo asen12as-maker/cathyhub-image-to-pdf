@@ -1,13 +1,37 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>CathyHub Image to PDF</title>
-<meta name="description" content="Free online Image to PDF converter by CathyHub.">
+<title>Image to PDF Converter – JPG & PNG to PDF Online | CathyHub</title>
+<meta name="description" content="Convert JPG, PNG and WEBP images to PDF online for free with CathyHub. Create a PDF from multiple images, choose A4 or Letter, set orientation and margins, and process files directly in your browser.">
+<meta name="keywords" content="image to PDF, JPG to PDF, PNG to PDF, WEBP to PDF, convert image to PDF online, image PDF converter">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pdf.cathyhub.shop/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Image to PDF Converter – JPG & PNG to PDF Online | CathyHub">
+<meta property="og:description" content="Free browser-based Image to PDF converter. Convert JPG, PNG and WEBP images into a PDF without uploading your files to a CathyHub server.">
+<meta property="og:url" content="https://pdf.cathyhub.shop/">
+<meta property="og:site_name" content="CathyHub">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Image to PDF Converter | CathyHub">
+<meta name="twitter:description" content="Convert JPG, PNG and WEBP images to PDF online for free.">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"CathyHub Image to PDF Converter",
+  "url":"https://pdf.cathyhub.shop/",
+  "applicationCategory":"UtilitiesApplication",
+  "operatingSystem":"Any",
+  "browserRequirements":"Requires JavaScript",
+  "description":"Free online tool for converting JPG, PNG and WEBP images into a PDF directly in the browser.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
+}
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.2/jspdf.umd.min.js"></script>
 <style>
 body{font-family:Arial,sans-serif;background:#f7f4ef;color:#2b2118;margin:0}header{background:#fff;padding:18px 20px;border-bottom:1px solid #ddd}.logo{max-width:900px;margin:auto;font-size:25px;font-weight:800;color:#8b4b20}.logo span{color:#d49a43}.wrap{max-width:900px;margin:35px auto;padding:0 18px}.hero{text-align:center;margin-bottom:25px}.hero h1{font-size:38px;margin:0 0 10px}.hero p{color:#6d6259}.box{background:#fff;padding:28px;border-radius:20px;box-shadow:0 8px 30px #00000014}.upload{display:block;border:2px dashed #d6b98d;border-radius:16px;padding:40px 20px;text-align:center;background:#fffaf4;cursor:pointer}.upload-icon{font-size:48px}.upload h2{margin:10px 0}.upload p{color:#777}.btn{display:inline-block;background:#9b5524;color:#fff;padding:12px 24px;border-radius:9px;font-weight:bold}input[type=file]{display:none}.controls{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}.control label{display:block;font-weight:bold;margin-bottom:8px}select,input[type=range]{width:100%}select{padding:12px;border:1px solid #ddd;border-radius:9px;background:#fff}.photos{margin-top:25px}.photo{display:flex;align-items:center;gap:14px;padding:12px;border:1px solid #eee;border-radius:10px;margin-bottom:10px}.photo img{width:65px;height:65px;object-fit:cover;border-radius:8px}.info{flex:1;overflow:hidden}.name{font-weight:bold;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.size{font-size:13px;color:#777;margin-top:4px}.remove{border:0;background:#eee;color:#a33;padding:8px 12px;border-radius:7px}.actions{display:flex;gap:12px;margin-top:25px}.create{flex:1;border:0;background:#9b5524;color:#fff;padding:14px;border-radius:10px;font-weight:bold;font-size:15px}.clear{border:0;background:#eee;padding:14px 20px;border-radius:10px;font-size:15px}.status{text-align:center;margin-top:18px;color:#666;min-height:22px}.privacy{margin-top:25px;padding:20px;background:#fff8ed;border-radius:14px;line-height:1.6}footer{text-align:center;padding:30px;color:#777;font-size:14px}@media(max-width:600px){.hero h1{font-size:29px}.box{padding:18px}.controls{grid-template-columns:1fr}.actions{flex-direction:column}}
 </style></head>
 <body><header><div class="logo">Cathy<span>Hub</span></div></header>
-<div class="wrap"><div class="hero"><h1>Image to PDF</h1><p>Convert JPG, PNG and WEBP images into a PDF.</p></div>
+<div class="wrap"><div class="hero"><h1>Image to PDF Converter</h1><p>Convert JPG, PNG and WEBP images into a PDF online for free.</p></div>
 <div class="box"><label class="upload" for="files"><div class="upload-icon">📄</div><h2>Select Images</h2><p>Multiple images supported</p><span class="btn">Choose Images</span></label>
 <input id="files" type="file" accept="image/jpeg,image/png,image/webp" multiple>
 <div class="controls"><div class="control"><label>Page Size</label><select id="size"><option value="a4">A4</option><option value="letter">Letter</option></select></div>
@@ -16,6 +40,29 @@ body{font-family:Arial,sans-serif;background:#f7f4ef;color:#2b2118;margin:0}head
 <div class="control"><label>Quality: <span id="qv">90</span>%</label><input id="quality" type="range" min="50" max="100" value="90"></div></div>
 <div id="photos" class="photos"></div><div class="actions"><button id="create" class="create">📄 Create PDF</button><button id="clear" class="clear">Clear</button></div>
 <div id="status" class="status"></div><div class="privacy"><strong>🔒 Privacy</strong><br>Your images are processed in your browser and are not uploaded to a CathyHub server.</div></div></div>
+<section class="seo-content" style="margin-top:28px;line-height:1.75">
+<h2>Free Image to PDF Converter Online</h2>
+<p>CathyHub Image to PDF Converter lets you turn multiple JPG, PNG and WEBP images into a single PDF document. You can select several images, arrange them in the order you want, choose A4 or Letter page size, select portrait or landscape orientation, set margins, and adjust image quality before creating your PDF.</p>
+<h2>Convert JPG or PNG to PDF in a Few Steps</h2>
+<p>Choose your images, review the selected files, select your preferred PDF settings, and click <strong>Create PDF</strong>. The finished PDF is generated in your browser and downloaded to your device. This is useful for combining scanned pages, photos, receipts, forms, notes and other images into one easy-to-share document.</p>
+<h2>Browser-Based and Privacy Friendly</h2>
+<p>Your selected images are processed in your browser for PDF creation. The tool does not require you to upload the images to a CathyHub server. For sensitive documents, you should still use a device and browser you trust.</p>
+<h2>PDF Settings You Can Choose</h2>
+<p>Select <strong>A4</strong> or <strong>Letter</strong> page size, choose <strong>Portrait</strong> or <strong>Landscape</strong> orientation, and set the page margin to suit your document. The quality control can also help balance PDF image quality and file size.</p>
+<h2>Frequently Asked Questions</h2>
+<p><strong>Can I convert multiple images into one PDF?</strong><br>Yes. You can select multiple JPG, PNG or WEBP images and create a single PDF.</p>
+<p><strong>Is this Image to PDF converter free?</strong><br>Yes. CathyHub provides this browser-based converter free to use.</p>
+<p><strong>Are my images uploaded to a server?</strong><br>No. The tool processes the selected images in your browser.</p>
+<p><strong>Can I create A4 and Letter PDFs?</strong><br>Yes. You can choose A4 or Letter page size before creating the PDF.</p>
+<h2>More Free CathyHub Image Tools</h2>
+<p>
+<a href="https://compressor.cathyhub.shop/">Image Compressor</a> ·
+<a href="https://resizer.cathyhub.shop/">Image Resizer</a> ·
+<a href="https://cropper.cathyhub.shop/">Image Cropper</a> ·
+<a href="https://converter.cathyhub.shop/">Image Converter</a> ·
+<a href="https://tools.cathyhub.shop/">All CathyHub Image Tools</a>
+</p>
+</section>
 <footer>© 2026 CathyHub • Free Online Image Tools</footer>
 <script>
 const F=document.getElementById('files'),P=document.getElementById('photos'),S=document.getElementById('status');let files=[];
